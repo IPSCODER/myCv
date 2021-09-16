@@ -287,6 +287,8 @@ p {
   justify-content: center;
   flex-wrap: wrap;
   margin-top: 50px;
+  height: 100vh;
+  width: 100vw;
 }
 #services .service-item {
   flex-basis: 80%;
@@ -509,9 +511,17 @@ p {
   /* flex-direction: column;
   max-width: 1200px; */
   margin: 0 auto;
-  background-image: linear-gradient(rgba(4, 9, 30, 0.6), rgba(4, 9, 30, 0.6)), url(img/iceem.jfif);
+  background-image: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 1)), url(img/iceem.jfif);
   background-position: center;
   background-size: cover;
+}
+.education h1{
+  color: white;
+   font-size: 35px; 
+   text-align: center;
+}
+.education h1 span{
+  color:lawngreen;
 }
 /* education end */
 
