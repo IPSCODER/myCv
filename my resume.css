@@ -502,6 +502,51 @@ p {
 
 /* End of contact section  */
 
+/* skills start-------------------------------------------------------------------------------------------------- */
+  
+#skills .skills {
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+#skills .skills-items {
+  width: 400px;
+}
+#skills .skills-item {
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  padding: 30px;
+  margin: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 10px 0 #000000;
+  transition: 0.3s ease box-shadow;
+  flex-direction: column;
+}
+#skills .skills-item:hover {
+  box-shadow: 0px 0px 5px 0 #000000;
+}
+#skills .icon {
+  width: 70px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+#skills .skills-info h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+#skills .skills-info h2 {
+  font-size: 1.3rem;
+  line-height: 2rem;
+  font-weight: 500;
+}
+
+/* skills end */
+
 /* footer */
 
 #footer {
@@ -682,6 +727,39 @@ p {
   }
 
   /* end of contact */
+
+  /* skills start media----------------------------------------------------------------------*/
+  #skills .skills {
+    flex-direction: column;
+    padding: 100px 0;
+    align-items: center;
+    justify-content: center;
+    min-width: 20vh;
+  }
+  #skills .skills-items {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0;
+  }
+  #skills .skills-item {
+    width: 25%;
+    flex-direction: row;
+  }
+  #skills .skills-item .icon {
+    height: 100px;
+    width: 50px;
+  }
+  #skills .skills-item .icon img {
+    object-fit: contain;
+  }
+  #skills .skills-item .skills-info {
+    text-align:center;
+    position: absolute;
+    padding-top: 82px;
+  }
+  /* skills end media */
 }
 
 /*  end media querry for tablet  */
@@ -715,3 +793,16 @@ p {
   }
 }
 /* end media querry  for desktop */
+
+@media only screen and (max-width:500px){
+  #hero {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.6), rgba(4, 9, 30, 0.6)),
+      url(img/jacket.jpg);
+    background-position: center;
+    background-size:cover;
+    background-attachment: fixed;
+    position: relative;
+    min-height: 100vh;
+    z-index: 1;
+  }
+}
