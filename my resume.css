@@ -390,7 +390,7 @@ p {
   overflow: hidden;
   position: relative;
 }
-#project .project-img::after {
+#projects .project-img::after {
   content: "";
   position: absolute;
   left: 0;
@@ -398,7 +398,7 @@ p {
   height: 100%;
   width: 100%;
   background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-  opacity: 0.7;
+  opacity: 0.4;
 }
 #projects .project-img img {
   transition: 0.3s ease transform;
@@ -569,6 +569,80 @@ p {
 }
 
 /* skills end */
+
+/* hobbies start */
+#hobbies .hobbies {
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+#hobbies .hobbies-header h1 {
+  margin-bottom: 50px;
+}
+#hobbies .all-hobbies {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#hobbies .hobbie-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 80%;
+  margin: 20px auto;
+  overflow: hidden;
+  border-radius: 10px;
+}
+#hobbies .hobbie-info {
+  padding: 30px;
+  flex-basis: 50%;
+  /* background-color: white; */
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  /* background-image: linear-gradient(60deg, #29323c 0%, #485563 100%); */
+  color: black;
+}
+#hobbies .hobbie-info h1 {
+  font-size: 4rem;
+  font-weight: 500;
+}
+#hobbies .hobbie-info h2 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-top: 10px;
+}
+#hobbies .hobbie-info p {
+  color: white;
+}
+#hobbies .hobbie-img {
+  flex-basis: 50%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+#hobbies .hobbie-img::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+  opacity: 0.7;
+}
+#hobbies .hobbie-img img {
+  transition: 0.3s ease transform;
+}
+#hobbies .hobbie-item:hover .hobbie-img img {
+  transform: scale(1.1);
+}
+/* hobbies end */
 
 /* footer */
 
@@ -796,6 +870,27 @@ p {
     padding-top: 82px;
   }
   /* skills end media */
+  /* hobbies start */
+  #hobbies .hobbie-item {
+    flex-direction: row;
+  }
+  #hobbies .hobbie-item:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+  #hobbies .hobbie-item {
+    height: 400px;
+    margin: 0;
+    width: 100%;
+    border-radius: 0;
+  }
+  #hobbies .all-hobbies .hobbie-info {
+    height: 100%;
+  }
+  #hobbies .all-hobbies .hobbie-img {
+    height: 100%;
+  }
+
+  /* hobbies end */
 }
 
 /*  end media querry for tablet  */
