@@ -501,6 +501,19 @@ p {
 }
 
 /* End of contact section  */
+/* eduaction start */
+#education .education {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-direction: column;
+  max-width: 1200px; */
+  margin: 0 auto;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.6), rgba(4, 9, 30, 0.6)), url(img/iceem.jfif);
+  background-position: center;
+  background-size: cover;
+}
+/* education end */
 
 /* skills start-------------------------------------------------------------------------------------------------- */
   
@@ -694,6 +707,19 @@ p {
   }
   /* end about */
 
+  /* education start */
+  #education .education {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column;
+    max-width: 1200px; */
+    margin: 0 auto;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.6), rgba(4, 9, 30, 0.6)), url(img/iceem.jfif);
+    background-position: center;
+    background-size: cover;
+  }
+  /* education end */
   /* contact */
   #contact .contact {
     flex-direction: column;
@@ -805,4 +831,26 @@ p {
     min-height: 100vh;
     z-index: 1;
   }
+    /* education start */
+    #education .education {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* flex-direction: column;
+      max-width: 1200px; */
+      margin: 0 auto;
+      background-image: linear-gradient(rgba(4, 9, 30, 0.6), rgba(4, 9, 30, 0.6)), url(img/iceem.jfif);
+      background-position: center;
+      background-size: cover;
+    }
+    #education{
+      padding-top:10px;
+      padding-bottom: 10px;
+    }
+    #education .education h1{
+      padding: 20px;
+      justify-content: center;
+      align-items: center;
+    }
+    /* education end */
 }
