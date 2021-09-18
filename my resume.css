@@ -595,6 +595,7 @@ p {
   margin: 20px auto;
   overflow: hidden;
   border-radius: 10px;
+  border: 1px solid gray;
 }
 #hobbies .hobbie-info {
   padding: 30px;
@@ -639,9 +640,9 @@ p {
 #hobbies .hobbie-img img {
   transition: 0.3s ease transform;
 }
-#hobbies .hobbie-item:hover .hobbie-img img {
+/* #hobbies .hobbie-item:hover .hobbie-img img {
   transform: scale(1.1);
-}
+} */
 /* hobbies end */
 
 /* footer */
@@ -925,7 +926,7 @@ p {
 }
 /* end media querry  for desktop */
 
-@media only screen and (max-width:500px){
+@media only screen and (max-width:650px){
   #hero {
     background-image: linear-gradient(rgba(4, 9, 30, 0.6), rgba(4, 9, 30, 0.6)),
       url(img/jacket.jpg);
